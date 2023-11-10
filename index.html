@@ -13,11 +13,19 @@
 
     <div class="container mainDiv">
         <div class="row d-flex justify-content-between">
-            <div class="col-sm-6 col-5">
-                <button id="againBtn">Again!</button>
+            <div id="wrapperBtn" class="col-sm-6 col-5 d-flex justify-content-start">
+                    <a onclick="again();" id="againBtn" class="my-super-cool-btn">
+                      <div class="dots-container">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                      </div>
+                      <span id="btnSpan" style="font-size: large;">Again!</span>
+                    </a>
             </div>
-            <div class="col-sm-6 col-7 d-flex justify-content-lg-end justify-content-md-center justify-content-start pe-lg-4 pe-5">
-                <p>(Between 1 to 20)</p>
+            <div class="col-sm-6 col-7 d-flex justify-content-lg-end justify-content-md-center justify-content-start align-items-start pt-3 pe-lg-4 pe-5">
+                <h5>(Between 1 to 20)</h5>
             </div>
         </div>
 
@@ -35,22 +43,30 @@
 
         <div class="row">
             <div class="offset-md-1 col-5 ">
-                <input id="userInput" type="text" name="userInput">
+                <input id="userInput" type="number" name="userInput">
             </div>
             <div class="offset-1 col-5">
-                <h4>Start guessing.....</h4>
+                <h4 id="hint">Start guessing.....</h4>
+                <h4 id="correct"></h4>
             </div>
         </div>
 
         <div class="row mt-4">
-            <div class="offset-md-1 col-5">
-                <button onclick="check();" id="checkBtn">Check!</button>
+            <div id="wrapperBtn" class="offset-md-1 col-5 mb-3">
+                    <a onclick="check();" id="checkBtn" class="my-super-cool-btn">
+                      <div class="dots-container">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                      </div>
+                      <span id="btnSpan">Go!</span>
+                    </a>
             </div>
 
-            <div class="offset-1 col-5">
-                <h4 id="score"></h4>
-                <h4>Highscore:0</h4>
-                <h4 id="correct"></h4>
+            <div class="offset-1 col-5 ">
+                <h4>score: <span id="score"></span></h4>
+                <h4>High-score: <span id="Highscore"></span></h4>
             </div>
         </div>
     </div>
