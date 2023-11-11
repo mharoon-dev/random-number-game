@@ -3,6 +3,7 @@ let userInput = document.querySelector('#userInput')
 let checkBtn = document.querySelector('#checkBtn')
 let btnSpan = document.querySelector('#btnSpan')
 let correct = document.querySelector('#correct')
+let corrextImage = document.querySelector('#corrextImage')
 let hint = document.querySelector('#hint')
 let Highscore = document.querySelector('#Highscore')
 let score = document.querySelector('#score')
@@ -24,6 +25,8 @@ function again() {
     mainDiv.style.transition = "0.5s"
     mainDiv.style.color = "white"
     mainDiv.style.border = "3px solid whitesmoke"
+    corrextImage.src = "./image 1.png"
+    userInput.style.border = "3px solid white"
     btnSpan.style.color = "white"
     checkBtn.style.color = "white"
     correct.textContent = ""
@@ -39,6 +42,8 @@ function check() {
         mainDiv.style.transform = "rotate(360deg)"
         mainDiv.style.transition = "0.5s"
         mainDiv.style.color = "black"
+        corrextImage.src = "./correct.png"
+        userInput.style.border = "3px solid black"
         btnSpan.style.color = "black"
         checkBtn.style.color = "black"
         mainDiv.style.border = "none"

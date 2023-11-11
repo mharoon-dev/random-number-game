@@ -4,7 +4,8 @@
     margin: 0;
 }
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder !important;
     height: 100vh;
     width: 100%;
     display: flex;
